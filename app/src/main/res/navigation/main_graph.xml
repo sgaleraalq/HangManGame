@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    tools:context=".ui.main.MainActivity"
+    app:startDestination="@id/classificationFragment">
+    <fragment
+        android:id="@+id/classificationFragment"
+        android:name="com.sgalera.hangedgame.ui.classification.ClassificationFragment"
+        android:label="fragment_classification"
+        tools:layout="@layout/fragment_classification" />
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.sgalera.hangedgame.ui.game.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.sgalera.hangedgame.ui.user.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" />
+</navigation>
