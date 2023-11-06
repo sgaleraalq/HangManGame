@@ -5,5 +5,5 @@
 
     // Main colors
     <color name="darkWhite">#BFBFBF</color>
-
+    <color name="softGrey">#7C7A7A</color>
 </resources>

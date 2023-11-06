@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">HangedGame</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Hang Man</string>
+
+    // APP strings
+    <string name="classificationFragment">Classification</string>
+    <string name="gameFragment">Hang Man</string>
+    <string name="userFragment">User profile</string>
+
 </resources>

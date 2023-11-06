@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/classificationFragment"
+        android:title="@string/classificationFragment"
+        android:icon="@drawable/ic_classification"
+        />
+
+    <item
+        android:id="@+id/gameFragment"
+        android:title="@string/gameFragment"
+        android:icon="@drawable/ic_game"
+        />
+
+    <item
+        android:id="@+id/userFragment"
+        android:title="@string/userFragment"
+        android:icon="@drawable/ic_user"
+        />
+</menu>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
     tools:context=".ui.main.MainActivity"
-    app:startDestination="@id/classificationFragment">
+    app:startDestination="@id/gameFragment">
     <fragment
         android:id="@+id/classificationFragment"
         android:name="com.sgalera.hangedgame.ui.classification.ClassificationFragment"
