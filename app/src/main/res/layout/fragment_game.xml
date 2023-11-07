@@ -10,8 +10,8 @@
         android:id="@+id/ivGallow"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_marginTop="32dp"
         android:background="@color/red"
+        app:layout_constraintBottom_toTopOf="@id/llLetters"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,9 +20,8 @@
         android:id="@+id/llLetters"
         android:layout_width="350dp"
         android:layout_height="75dp"
-        android:layout_marginTop="36dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/llKeyboard"
+        app:layout_constraintBottom_toTopOf="@+id/llFirstRow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivGallow">
@@ -35,176 +34,204 @@
 
     </LinearLayout>
 
+
     <LinearLayout
-        android:id="@+id/llKeyboard"
-        android:layout_width="400dp"
+        android:id="@+id/llFirstRow"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="32dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingVertical="3dp"
+        app:layout_constraintBottom_toTopOf="@id/llSecondRow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:paddingVertical="3dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnQ"
+            style="@style/btnLetterFirstRow"
+            android:text="@string/q"
+            tools:ignore="TouchTargetSizeCheck" />
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnQ"
-                style="@style/btnLetterFirstRow"
-                android:text="@string/q" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnW"
+            style="@style/btnLetterFirstRow"
+            android:text="@string/w"
+            tools:ignore="TouchTargetSizeCheck" />
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnW"
-                style="@style/btnLetterFirstRow"
-                android:text="@string/w" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnE"
+            style="@style/btnLetterFirstRow"
+            android:text="@string/e"
+            tools:ignore="TouchTargetSizeCheck" />
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnE"
-                style="@style/btnLetterFirstRow"
-                android:text="@string/e" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnR"
+            style="@style/btnLetterFirstRow"
+            android:text="@string/r"
+            tools:ignore="TouchTargetSizeCheck" />
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnR"
-                style="@style/btnLetterFirstRow"
-                android:text="@string/r" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnT"
+            style="@style/btnLetterFirstRow"
+            android:text="@string/t"
+            tools:ignore="TouchTargetSizeCheck" />
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnT"
-                style="@style/btnLetterFirstRow"
-                android:text="@string/t" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnY"
+            style="@style/btnLetterFirstRow"
+            android:text="@string/y"
+            tools:ignore="TouchTargetSizeCheck" />
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnY"
-                style="@style/btnLetterFirstRow"
-                android:text="@string/y" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnU"
+            style="@style/btnLetterFirstRow"
+            android:text="@string/u"
+            tools:ignore="TouchTargetSizeCheck" />
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnU"
-                style="@style/btnLetterFirstRow"
-                android:text="@string/u" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnI"
+            style="@style/btnLetterFirstRow"
+            android:text="@string/i"
+            tools:ignore="TouchTargetSizeCheck" />
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnI"
-                style="@style/btnLetterFirstRow"
-                android:text="@string/i" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnO"
+            style="@style/btnLetterFirstRow"
+            android:text="@string/o"
+            tools:ignore="TouchTargetSizeCheck" />
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnO"
-                style="@style/btnLetterFirstRow"
-                android:text="@string/o" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnP"
-                style="@style/btnLetterFirstRow"
-                android:text="@string/p" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:paddingVertical="3dp">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnA"
-                style="@style/btnLetterSecondRow"
-                android:layout_marginEnd="4dp"
-                android:text="@string/a" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnS"
-                style="@style/btnLetterSecondRow"
-                android:text="@string/s" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnD"
-                style="@style/btnLetterSecondRow"
-                android:text="@string/d" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnF"
-                style="@style/btnLetterSecondRow"
-                android:text="@string/f" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnG"
-                style="@style/btnLetterSecondRow"
-                android:text="@string/g" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnH"
-                style="@style/btnLetterSecondRow"
-                android:text="@string/h" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnJ"
-                style="@style/btnLetterSecondRow"
-                android:text="@string/j" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnK"
-                style="@style/btnLetterSecondRow"
-                android:text="@string/k" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnL"
-                style="@style/btnLetterSecondRow"
-                android:text="@string/l" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:paddingVertical="3dp">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnZ"
-                style="@style/btnLetterThirdRow"
-                android:text="@string/z" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnX"
-                style="@style/btnLetterThirdRow"
-                android:text="@string/x" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnC"
-                style="@style/btnLetterThirdRow"
-                android:text="@string/c" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnV"
-                style="@style/btnLetterThirdRow"
-                android:text="@string/v" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnB"
-                style="@style/btnLetterThirdRow"
-                android:text="@string/b" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnN"
-                style="@style/btnLetterThirdRow"
-                android:text="@string/n" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnM"
-                style="@style/btnLetterThirdRow"
-                android:text="@string/m" />
-
-
-        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnP"
+            style="@style/btnLetterFirstRow"
+            android:text="@string/p"
+            tools:ignore="TouchTargetSizeCheck" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSecondRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingVertical="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/llThirdRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnA"
+            style="@style/btnLetterSecondRow"
+            android:layout_marginEnd="4dp"
+            android:text="@string/a"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnS"
+            style="@style/btnLetterSecondRow"
+            android:text="@string/s"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnD"
+            style="@style/btnLetterSecondRow"
+            android:text="@string/d"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnF"
+            style="@style/btnLetterSecondRow"
+            android:text="@string/f"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnG"
+            style="@style/btnLetterSecondRow"
+            android:text="@string/g"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnH"
+            style="@style/btnLetterSecondRow"
+            android:text="@string/h"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnJ"
+            style="@style/btnLetterSecondRow"
+            android:text="@string/j"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnK"
+            style="@style/btnLetterSecondRow"
+            android:text="@string/k"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnL"
+            style="@style/btnLetterSecondRow"
+            android:text="@string/l"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llThirdRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingVertical="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="8dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnZ"
+            style="@style/btnLetterThirdRow"
+            android:text="@string/z"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnX"
+            style="@style/btnLetterThirdRow"
+            android:text="@string/x"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnC"
+            style="@style/btnLetterThirdRow"
+            android:text="@string/c"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnV"
+            style="@style/btnLetterThirdRow"
+            android:text="@string/v"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnB"
+            style="@style/btnLetterThirdRow"
+            android:text="@string/b"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnN"
+            style="@style/btnLetterThirdRow"
+            android:text="@string/n"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnM"
+            style="@style/btnLetterThirdRow"
+            android:text="@string/m"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,7 @@
 
     <style name="btnLetter">
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_width">30dp</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:background">@drawable/rounded_button</item>
 <!--        <item name="android:fontFamily">@font/caveat</item>-->
@@ -19,11 +19,11 @@
     </style>
 
     <style name="btnLetterFirstRow" parent="btnLetter">
-        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:layout_marginEnd">3dp</item>
     </style>
 
     <style name="btnLetterSecondRow" parent="btnLetter">
-        <item name="android:layout_marginEnd">1dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
     </style>
 
     <style name="btnLetterThirdRow" parent="btnLetter">
