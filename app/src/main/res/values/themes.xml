@@ -6,4 +6,27 @@
     </style>
 
     <style name="Theme.HangedGame" parent="Base.Theme.HangedGame" />
+
+    <style name="btnLetter">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/rounded_button</item>
+<!--        <item name="android:fontFamily">@font/caveat</item>-->
+        <item name="android:text">@string/a</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="btnLetterFirstRow" parent="btnLetter">
+        <item name="android:layout_marginEnd">0dp</item>
+    </style>
+
+    <style name="btnLetterSecondRow" parent="btnLetter">
+        <item name="android:layout_marginEnd">1dp</item>
+    </style>
+
+    <style name="btnLetterThirdRow" parent="btnLetter">
+        <item name="android:layout_marginEnd">7dp</item>
+    </style>
 </resources>

@@ -1,9 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.game.GameFragment">
 
+    <ImageView
+        android:id="@+id/ivGallow"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <LinearLayout
+        android:id="@+id/llLetters"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/llKeyboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivGallow">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Just a test"
+            android:textSize="50sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llKeyboard"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingVertical="3dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnQ"
+                style="@style/btnLetterFirstRow"
+                android:text="@string/q" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnW"
+                style="@style/btnLetterFirstRow"
+                android:text="@string/w" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnE"
+                style="@style/btnLetterFirstRow"
+                android:text="@string/e" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnR"
+                style="@style/btnLetterFirstRow"
+                android:text="@string/r" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnT"
+                style="@style/btnLetterFirstRow"
+                android:text="@string/t" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnY"
+                style="@style/btnLetterFirstRow"
+                android:text="@string/y" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnU"
+                style="@style/btnLetterFirstRow"
+                android:text="@string/u" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnI"
+                style="@style/btnLetterFirstRow"
+                android:text="@string/i" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnO"
+                style="@style/btnLetterFirstRow"
+                android:text="@string/o" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnP"
+                style="@style/btnLetterFirstRow"
+                android:text="@string/p" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingVertical="3dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnA"
+                style="@style/btnLetterSecondRow"
+                android:layout_marginEnd="4dp"
+                android:text="@string/a" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnS"
+                style="@style/btnLetterSecondRow"
+                android:text="@string/s" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnD"
+                style="@style/btnLetterSecondRow"
+                android:text="@string/d" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnF"
+                style="@style/btnLetterSecondRow"
+                android:text="@string/f" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnG"
+                style="@style/btnLetterSecondRow"
+                android:text="@string/g" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnH"
+                style="@style/btnLetterSecondRow"
+                android:text="@string/h" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnJ"
+                style="@style/btnLetterSecondRow"
+                android:text="@string/j" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnK"
+                style="@style/btnLetterSecondRow"
+                android:text="@string/k" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnL"
+                style="@style/btnLetterSecondRow"
+                android:text="@string/l" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingVertical="3dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnZ"
+                style="@style/btnLetterThirdRow"
+                android:text="@string/z" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnX"
+                style="@style/btnLetterThirdRow"
+                android:text="@string/x" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnC"
+                style="@style/btnLetterThirdRow"
+                android:text="@string/c" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnV"
+                style="@style/btnLetterThirdRow"
+                android:text="@string/v" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnB"
+                style="@style/btnLetterThirdRow"
+                android:text="@string/b" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnN"
+                style="@style/btnLetterThirdRow"
+                android:text="@string/n" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnM"
+                style="@style/btnLetterThirdRow"
+                android:text="@string/m" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
