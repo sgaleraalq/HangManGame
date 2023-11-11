@@ -12,11 +12,13 @@
         <item name="android:layout_width">30dp</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:background">@null</item>
-<!--        <item name="android:background">@drawable/rounded_button</item>-->
-<!--        <item name="android:fontFamily">@font/caveat</item>-->
         <item name="android:text">@string/a</item>
         <item name="android:textColor">@color/darkWhite</item>
         <item name="android:textSize">20sp</item>
+        // On click set it to be guessLetter of my GameFragment class
+        <item name="android:onClick"></item>
+        <!--        <item name="android:background">@drawable/rounded_button</item>-->
+        <!--        <item name="android:fontFamily">@font/caveat</item>-->
     </style>
 
     <style name="btnLetterFirstRow" parent="btnLetter">
