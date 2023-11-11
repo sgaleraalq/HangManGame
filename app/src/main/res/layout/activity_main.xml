@@ -7,26 +7,6 @@
     android:background="@color/white"
     tools:context=".ui.main.MainActivity">
 
-    <FrameLayout
-        android:id="@+id/flAppTitle"
-        android:layout_width="0dp"
-        android:layout_height="?attr/actionBarSize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/caveat"
-            android:text="@string/app_name"
-            android:textAllCaps="true"
-            android:textColor="@color/black"
-            android:textSize="30sp" />
-
-    </FrameLayout>
-
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
         android:name="androidx.navigation.fragment.NavHostFragment"
@@ -36,7 +16,7 @@
         app:layout_constraintBottom_toTopOf="@+id/navigationBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/flAppTitle"
+        app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/main_graph" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

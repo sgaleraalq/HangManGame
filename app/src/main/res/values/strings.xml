@@ -6,6 +6,8 @@
     <string name="gameFragment">Hang Man</string>
     <string name="userFragment">User profile</string>
 
+    <string name="test">Just a test</string>
+
 
     // Letters
     <string name="a">A</string>
