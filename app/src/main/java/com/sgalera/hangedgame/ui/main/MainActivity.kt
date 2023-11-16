@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity() {
     fun guessLetter(view: View){
         if (view is AppCompatButton){
             val buttonText = view.text.toString()
+            // TODO missing setting up guess
             println(buttonText)
         }
     }

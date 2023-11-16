@@ -16,7 +16,7 @@
         <item name="android:textColor">@color/darkWhite</item>
         <item name="android:textSize">20sp</item>
         // On click set it to be guessLetter of my GameFragment class
-        <item name="android:onClick"></item>
+        <item name="android:onClick">guessLetter</item>
         <!--        <item name="android:background">@drawable/rounded_button</item>-->
         <!--        <item name="android:fontFamily">@font/caveat</item>-->
     </style>
