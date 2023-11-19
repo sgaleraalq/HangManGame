@@ -29,26 +29,57 @@
 
         </androidx.cardview.widget.CardView>
 
-        <EditText
-            android:id="@+id/tvUserName"
-            android:layout_width="300dp"
+        <LinearLayout
+            android:id="@+id/llUserName"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cvAccountImage"
-            tools:text="Just a trial" />
+            app:layout_constraintTop_toBottomOf="@+id/cvAccountImage">
 
-        <EditText
-            android:layout_width="300dp"
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_user"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="8dp"/>
+
+
+            <EditText
+                android:id="@+id/tvUserName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/userName"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llPassword"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvUserName"
-            tools:text="Just a trial" />
+            app:layout_constraintTop_toBottomOf="@+id/llUserName">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_user"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="8dp"/>
+
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:textSize="30sp" />
+
+        </LinearLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

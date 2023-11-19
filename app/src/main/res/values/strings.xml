@@ -7,6 +7,8 @@
     <string name="userFragment">User profile</string>
 
     <string name="test">Just a test</string>
+    <string name="userName">Username</string>
+    <string name="password">Password</string>
 
 
     // Letters
