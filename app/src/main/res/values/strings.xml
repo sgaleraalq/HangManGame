@@ -37,5 +37,8 @@
     <string name="y">Y</string>
     <string name="z">Z</string>
 
+    // Descriptions
+    <string name="descriptionIVNotSignedIn">Image not signed in</string>
+
 
 </resources>
