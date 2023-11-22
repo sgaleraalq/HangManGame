@@ -9,21 +9,40 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clLogInScreen"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/softWhite">
+
+        <TextView
+            android:id="@+id/ivLogInTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/permanent_marker"
+            android:gravity="center"
+            android:text="@string/pleaseLogIn"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/cvAccountImage"/>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cvAccountImage"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="100dp"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:backgroundTint="@color/red"
+            app:cardCornerRadius="110dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@id/ivLogInTitle"
+            app:layout_constraintBottom_toTopOf="@id/llUserName">
 
             <ImageView
                 android:id="@+id/ivNotSigned"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
                 android:contentDescription="@string/descriptionIVNotSignedIn"
                 android:src="@drawable/ic_user" />
 
@@ -33,25 +52,28 @@
             android:id="@+id/llUserName"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/llPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cvAccountImage">
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/ic_user"
-                android:layout_gravity="bottom"
-                android:layout_marginEnd="8dp"/>
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|center"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_user" />
 
 
             <EditText
-                android:id="@+id/tvUserName"
+                android:id="@+id/etUserName"
                 android:layout_width="300dp"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:hint="@string/userName"
-                android:textSize="30sp" />
+                android:maxLength="20"
+                android:maxLines="1"
+                android:textSize="25sp" />
 
         </LinearLayout>
 
@@ -60,26 +82,52 @@
             android:id="@+id/llPassword"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/llUserName">
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/ic_user"
-                android:layout_gravity="bottom"
-                android:layout_marginEnd="8dp"/>
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|center"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_key" />
 
 
             <EditText
+                android:id="@+id/etPassword"
                 android:layout_width="300dp"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:hint="@string/password"
-                android:textSize="30sp" />
+                android:inputType="textPassword"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textSize="25sp" />
 
         </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogIn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/darkWhite"
+            android:text="@string/logIn"
+            app:layout_constraintBottom_toTopOf="@id/tvSignUp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llPassword" />
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notLoggedIn"
+            android:textColor="@color/blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnLogIn" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

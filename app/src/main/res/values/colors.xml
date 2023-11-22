@@ -5,6 +5,8 @@
 
     // Main colors
     <color name="darkWhite">#BFBFBF</color>
+    <color name="softWhite">#FFFCFC</color>
     <color name="softGrey">#7C7A7A</color>
     <color name="red">#F44336</color>
+    <color name="blue">#03A9F4</color>
 </resources>
