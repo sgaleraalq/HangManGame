@@ -35,6 +35,7 @@ class UserFragment : Fragment() {
 
     private fun initUI(){
         initComponents()
+        initListeners()
     }
 
     private fun initComponents() {
@@ -44,5 +45,18 @@ class UserFragment : Fragment() {
         ivNotSigned = binding.ivNotSigned
         ivNotSigned.setColorFilter(ContextCompat.getColor(this.requireContext(), R.color.white))
     }
+
+    private fun initListeners() {
+        tvSignUp.setOnClickListener{
+            showSignUpView()
+        }
+    }
+
+    private fun showSignUpView() {
+        binding.clLogInScreen.visibility = View.GONE
+        binding.clSignUp.visibility = View.VISIBLE
+    }
+
+
 
 }
