@@ -56,7 +56,4 @@ class UserFragment : Fragment() {
         binding.clLogInScreen.visibility = View.GONE
         binding.clSignUp.visibility = View.VISIBLE
     }
-
-
-
 }

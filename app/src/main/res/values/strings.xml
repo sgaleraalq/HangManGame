@@ -12,6 +12,9 @@
     <string name="logIn">Log In</string>
     <string name="notLoggedIn">Don\'t have an account? Sign up</string>
     <string name="pleaseLogIn">Please, Log In</string>
+    <string name="createUser">Create a new account</string>
+    <string name="tvName">Name</string>
+    <string name="tvEmail">Email</string>
 
 
     // Letters
