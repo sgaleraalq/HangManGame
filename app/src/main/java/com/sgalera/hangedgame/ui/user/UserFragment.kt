@@ -17,6 +17,8 @@ class UserFragment : Fragment() {
     private lateinit var tvSignUp: TextView
     private lateinit var ivNotSigned: ImageView
 
+    private val url: String = "https://private-b2f09-sergiogalera.apiary-mock.com"
+
 
     private var _binding: FragmentUserBinding? = null
     private val binding get() = _binding!!
